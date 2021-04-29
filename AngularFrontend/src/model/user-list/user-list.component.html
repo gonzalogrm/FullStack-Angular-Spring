@@ -1,0 +1,31 @@
+<h3> User List</h3>
+<table class = "table table-sm">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>Language</th>
+            <th>Options</th>
+        </tr>
+    </thead>
+    <!-- El bucle recorre cada usuario de users-->
+    <!-- Este archivo html está asociado a su respectivo .ts -->
+    <!-- users es una propiedad definida en el .ts users: User[]-->
+    <tbody>
+        <tr *ngFor = "let u of users">
+            <!-- {{}} Es interpolación para acceder a los campos -->
+            <td>{{u.id}}</td>
+            <td>{{u.name}}</td>
+            <td>{{u.email}}</td>
+            <td>{{u.age}}</td>
+            <td>{{u.language}}</td>
+            <td>
+                <!--Estos botones llaman a los métodos definidos en el .ts del componente user-list-->
+                <button (click) = "updateUser(u.id)" class = "btn btn-info"> Update</button>
+                <button (click) = "deleteUser(u.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
