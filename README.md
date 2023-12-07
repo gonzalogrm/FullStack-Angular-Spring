@@ -9,3 +9,7 @@ Backend
 Frontend:
 - Proyecto Angular creado en VSCode
 - Utiliza Bootstrap para gestión de CSS
+
+NOTA SOBRE INFORMACIÓN SENSITIVA
+- Al tratarse de un proyecto de ejemplo se incluye un archivo de configuración con usuario y contraseña ficticios para que el proyecto esté listo para ser utilizado.
+- En casos reales no se debe incluir información sensitiva en archivos de configuración en repositorios públicos.
